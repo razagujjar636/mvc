@@ -1,0 +1,41 @@
+﻿@model List<assignment_03.Models.prayer>
+@{
+    ViewBag.Title = "find";
+}
+
+<h2>your requested masjids</h2>
+<table border="1">
+    <tr>
+        <td>Masjid Name</td>
+        <td>Masjid Area</td>
+        <td>Fajar Time</td>
+        <td>Zhoar Time</td>
+        <td>Asar Time</td>
+        <td>Maghrib Time</td>
+        <td>Esha Time</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.majid_name</td>
+            <td>@item.masjid_area</td>
+            <td>@item.fajar_time</td>
+            <td>@item.zohar_time</td>
+            <td>@item.asar_time</td>
+            <td>@item.maghrib_time</td>
+            <td>@item.esha_time</td>
+            <td>
+                <form action="/Home/edit">
+                    <input type="hidden" name="name" value="@item.majid_name"/>
+                    <input type="submit" value="edit"/>
+                </form>
+            </td>
+            <td>
+                <form action="/Home/delete">
+                    <input type="hidden" name="name" value="@item.majid_name" />
+                    <input type="submit" value="Delete" />
+                </form>
+            </td>
+        </tr>
+    }
+</table>

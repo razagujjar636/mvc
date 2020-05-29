@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="prayers">
+  <DataContextMoniker Name="/prayersDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f450f230-0f8f-4f4f-b2fc-2ed07e19d8ba" absoluteBounds="3.875, 1.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/prayersDataContext/prayer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a937a66-74d8-4993-a295-1b01057c3705" absoluteBounds="3.89, 2.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
